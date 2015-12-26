@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "TestJQueryUI";
+}
+
+<h2>TestJQueryUI</h2>
+<input type="text" id="dp"/>
+@section scripts{
+<script src="~/jquery-ui-1.11.1.custom/external/jquery/jquery.js"></script>
+<script src="~/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+<link href="~/jquery-ui-1.11.1.custom/jquery-ui.css" rel="stylesheet">
+<script>
+    $(document).ready(function () {
+        $("#dp").datepicker({
+            dateFormat: "yy-mm-dd",
+            inline:true
+        });
+    });
+</script>
+}
